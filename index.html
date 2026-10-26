@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="YU 的个人作品集，关注影像、剪辑、数字体验与日常观察。"
+    />
+    <meta name="theme-color" content="#f0eee8" />
+    <title>YU - Visual Editor & Creative Technologist</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <div class="cursor" aria-hidden="true">
+      <span class="cursor__dot"></span>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header" id="site-header">
+      <a class="wordmark" href="#top" aria-label="返回首页">
+        <span class="wordmark__mark">YU</span>
+        <span class="wordmark__meta">PERSONAL ARCHIVE<br />2026</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a href="#work"><span>01</span>作品</a>
+        <a href="#about"><span>02</span>关于</a>
+        <a href="#contact"><span>03</span>联系</a>
+      </nav>
+
+      <div class="site-header__meta">
+        <p class="local-time">
+          SHANGHAI <span aria-hidden="true">/</span>
+          <time id="local-time" datetime="">--:--</time>
+        </p>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span>目录</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M4 8h16M4 16h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero__topline">
+          <p>Independent visual practice</p>
+          <p>Selected work / 2024-2026</p>
+        </div>
+
+        <div class="hero__stage">
+          <div class="hero__copy">
+            <p class="hero__eyebrow">视觉剪辑 / 数字体验 / 日常观察</p>
+            <h1 class="hero__title" id="hero-title">
+              <span>把日常</span>
+              <span class="hero__title-indent"><em>剪成</em>值得</span>
+              <span>停留的画面。</span>
+            </h1>
+          </div>
+
+          <figure class="hero__object" data-cursor="view">
+            <img
+              src="./assets/519304f299e62efa5a0605280e829dc0.jpg"
+              alt="Keep Study"
+              width="700"
+              height="900"
+            />
+            <figcaption>
+              <span>Stillness in a cup</span>
+              <span>Visual study / 01</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="hero__footer">
+          <p>
+            너의 인생이 어느 계절을 지나고 있어도
+그 모든 계절이 찬란하기를..
+          </p>
+          <a class="scroll-cue" href="#work">
+            <span>向下浏览</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M12 5v14M6 13l6 6 6-6" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="work section-shell" id="work" aria-labelledby="work-title">
+        <header class="section-heading">
+          <p class="section-index">01 / SELECTED WORK</p>
+          <div class="section-heading__main">
+            <h2 id="work-title">Soft<br /><em>Grounded</em>Less is more.</h2>
+            <p class="section-lede">
+              언젠가 지나지 않을까?
+              끝나지 않을 것 같은 겨울도 버티다 보면
+              어느 날 불쑥
+              어디선가 봄바람이 불러와 줄지도 모르니까
+            </p>
+          </div>
+        </header>
+
+        <article class="project project--large">
+          <button
+            class="project__media"
+            type="button"
+            data-project="still"
+            data-cursor="view"
+            aria-label="查看项目 Aftertaste"
+          >
+            <img
+              src="./assets/9aa0b1bcf5ca4f7c90646109edbe5a61.jpg"
+              alt="Aftertaste 纪念我们"
+              width="900"
+              height="800"
+            />
+            <span class="project__cursor-label">VIEW</span>
+          </button>
+          <div class="project__meta">
+            <div class="project__identity">
+              <span class="project__number">01</span>
+              <div>
+                <h3>Aftertaste</h3>
+                <p>个人设计品牌短片 / 概念项目</p>
+              </div>
+            </div>
+            <dl class="project__details">
+              <div>
+                <dt>年份</dt>
+                <dd>2026</dd>
+              </div>
+              <div>
+                <dt>职责</dt>
+                <dd>概念 / 拍摄 / 剪辑</dd>
+              </div>
+            </dl>
+            <button class="text-link" type="button" data-project="still">
+              查看项目
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M7 17 17 7M8 7h9v9" />
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="project project--offset">
+          <button
+            class="project__media"
+            type="button"
+            data-project="afterhours"
+            data-cursor="view"
+            aria-label="查看项目 After Hours"
+          >
+            <img
+              src="./assets/5b1007fcf683fde4bf7ddbd2bf4106f2.jpg"
+              alt="After Hours Still I rise"
+              width="900"
+              height="800"
+            />
+            <span class="project__cursor-label">VIEW</span>
+          </button>
+          <div class="project__meta">
+            <div class="project__identity">
+              <span class="project__number">02</span>
+              <div>
+                <h3>After Hours</h3>
+                <p>空间影像随笔 / 自发项目</p>
+              </div>
+            </div>
+            <dl class="project__details">
+              <div>
+                <dt>年份</dt>
+                <dd>2025</dd>
+              </div>
+              <div>
+                <dt>职责</dt>
+                <dd>摄影 / 剪辑 / 文字</dd>
+              </div>
+            </dl>
+            <button class="text-link" type="button" data-project="afterhours">
+              查看项目
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M7 17 17 7M8 7h9v9" />
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="project project--last">
+          <button
+            class="project__media"
+            type="button"
+            data-project="signals"
+            data-cursor="view"
+            aria-label="查看项目 Small Signals"
+          >
+            <img
+              src="./assets/d9c7b0517bcc62f235132e13e1fdcb62.jpg"
+              alt="Small Signals 物联网界面概念视觉"
+              width="1000"
+              height="900"
+            />
+            <span class="project__cursor-label">VIEW</span>
+          </button>
+          <div class="project__meta">
+            <div class="project__identity">
+              <span class="project__number">03</span>
+              <div>
+                <h3>Small Signals</h3>
+                <p>居住空间交互界面 / 概念项目</p>
+              </div>
+            </div>
+            <dl class="project__details">
+              <div>
+                <dt>年份</dt>
+                <dd>2026</dd>
+              </div>
+              <div>
+                <dt>职责</dt>
+                <dd>概念 / 界面 / 前端原型</dd>
+              </div>
+            </dl>
+            <button class="text-link" type="button" data-project="signals">
+              查看项目
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M7 17 17 7M8 7h9v9" />
+              </svg>
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about__inner section-shell">
+          <header class="about__heading">
+            <p class="section-index section-index--light">02 / ABOUT</p>
+            <p class="about__note">
+              以自由身份进行影像与数字项目合作。
+            </p>
+          </header>
+
+          <div class="about__statement">
+            <h2 id="about-title">
+              女性视角的设计不是柔软，<br />
+              而是细腻的<em>洞察力</em>。
+            </h2>
+            <div class="about__copy">
+              <p>
+                If the heart is a can.An organ taken from a human body,I want to put my hand 
+                into my chest.Take it out.I am going to wash it with warm water and dry it with 
+                a towel.Air it in a sunny and well-ventilated place.
+              </p>
+              <p>
+                我的工作方式很直接：找到真正值得表达的核心，
+                再用尽量少的元素把它成立。比起堆叠效果，
+                我更在意节奏、留白和观看时的呼吸感。
+              </p>
+            </div>
+          </div>
+
+          <div class="about__principles" aria-label="工作方向">
+            <div class="principle">
+              <span>01</span>
+              <h3>影像与剪辑</h3>
+              <p>短视频、品牌影像与叙事节奏，从素材筛选到最终成片。</p>
+            </div>
+            <div class="principle">
+              <span>02</span>
+              <h3>数字与原型</h3>
+              <p>基础前端、交互结构与物联网背景，让想法可以被实际体验。</p>
+            </div>
+            <div class="principle">
+              <span>03</span>
+              <h3>现场与沟通</h3>
+              <p>让观察、协作与需求确认成为工作的一部分。</p>
+            </div>
+          </div>
+
+          <div class="about__foot">
+            <p>23 / Barista / Visual editor</p>
+            <p>Film, books and the quiet hours after work.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="manifesto section-shell" aria-label="创作理念">
+        <p class="manifesto__index">A NOTE ON SPACE</p>
+        <blockquote>
+          “好的作品不是填满空间，<br />
+          而是让人愿意在其中停留。”
+        </blockquote>
+      </section>
+
+      <section
+        class="contact section-shell"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <header class="section-heading section-heading--contact">
+          <p class="section-index">03 / CONTACT</p>
+          <p class="contact__availability">
+            <span aria-hidden="true"></span>
+            接受影像剪辑、内容拍摄与小型数字体验合作
+          </p>
+        </header>
+
+        <div class="contact__main">
+          <h2 id="contact-title">一起做点<br /><em>有质感</em>的事。</h2>
+          <div class="contact__aside">
+            <p>
+              如果你有一个值得被认真表达的想法，欢迎告诉我项目背景、
+              期望形式和大致时间。
+            </p>
+            <a class="contact__email" href="mailto:hello@yu.studio">
+              hello@yu.studio
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M7 17 17 7M8 7h9v9" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__footer">
+          <p>China / Remote collaboration</p>
+          <p>Visual editing · Creative technology</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>YU / Personal archive</p>
+      <p>Designed with space, rhythm and restraint.</p>
+      <a href="#top">回到顶部 ↑</a>
+    </footer>
+
+    <dialog class="project-dialog" id="project-dialog">
+      <div class="project-dialog__surface">
+        <button
+          class="project-dialog__close"
+          type="button"
+          aria-label="关闭项目详情"
+        >
+          <span>关闭</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M6 6l12 12M18 6 6 18" />
+          </svg>
+        </button>
+
+        <div class="project-dialog__media">
+          <img id="dialog-image" alt="" />
+        </div>
+
+        <div class="project-dialog__content">
+          <p class="project-dialog__index" id="dialog-index"></p>
+          <h2 id="dialog-title"></h2>
+          <p class="project-dialog__summary" id="dialog-summary"></p>
+
+          <dl class="project-dialog__details" id="dialog-details"></dl>
+
+          <div class="project-dialog__notes" id="dialog-notes"></div>
+
+          <a class="text-link text-link--dialog" href="mailto:hello@yu.studio">
+            讨论类似项目
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M7 17 17 7M8 7h9v9" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
